@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
-@import "@fontsource/fraunces/400.css";
-@import "@fontsource/fraunces/600.css";
-@import "@fontsource/fraunces/900.css";
 @import "@fontsource/inter/400.css";
 @import "@fontsource/inter/500.css";
 @import "@fontsource/inter/600.css";
+@import "@fontsource/manrope/400.css";
+@import "@fontsource/manrope/500.css";
+@import "@fontsource/manrope/700.css";
 @import "@fontsource/jetbrains-mono/400.css";
 @import "@fontsource/jetbrains-mono/500.css";
 
@@ -45,7 +45,7 @@
   --color-flag: var(--flag);
   --color-flag-light: var(--flag-light);
 
-  --font-display: "Fraunces", serif;
+  --font-display: "Manrope", "Inter", system-ui, sans-serif;
   --font-body: "Inter", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 }
@@ -72,9 +72,9 @@ body {
   min-height: 100vh;
   background-color: var(--paper);
   background-image:
-    radial-gradient(circle at top, color-mix(in srgb, var(--signal) 15%, transparent), transparent 42%),
-    radial-gradient(circle at 85% 15%, color-mix(in srgb, var(--brass) 20%, transparent), transparent 28%),
-    linear-gradient(to bottom, color-mix(in srgb, var(--paper) 92%, white), var(--paper));
+    radial-gradient(circle at top, color-mix(in srgb, var(--signal) 10%, transparent), transparent 42%),
+    radial-gradient(circle at 85% 15%, color-mix(in srgb, var(--brass) 14%, transparent), transparent 28%),
+    linear-gradient(to bottom, color-mix(in srgb, var(--paper) 95%, white), var(--paper));
   color: var(--ink);
   font-family: var(--font-body);
 }

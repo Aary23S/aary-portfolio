@@ -23,7 +23,7 @@ export function DossierRail() {
       "
     >
       <div className="hidden lg:block">
-        <span className="font-mono text-xs tracking-widest text-brass">
+        <span className="font-sans text-xs font-semibold tracking-[0.2em] text-brass">
           A. SATARDEKAR
         </span>
       </div>
@@ -39,10 +39,10 @@ export function DossierRail() {
                  ${isActive ? "text-flag" : "text-ink/70 hover:text-signal"}`
               }
             >
-              <span className="font-mono text-[10px] lg:text-xs tracking-wider opacity-70">
+              <span className="font-sans text-[10px] lg:text-xs font-semibold tracking-[0.16em] opacity-70">
                 §{entry.index}
               </span>
-              <span className="font-mono text-[10px] lg:text-sm uppercase tracking-wide">
+              <span className="font-sans text-[10px] lg:text-sm font-medium uppercase tracking-[0.12em]">
                 {entry.label}
               </span>
             </NavLink>
@@ -51,7 +51,7 @@ export function DossierRail() {
       </ul>
 
       <div className="hidden lg:block">
-        <span className="font-mono text-[10px] text-brass/70">
+        <span className="font-sans text-[10px] font-medium tracking-[0.14em] text-brass/70">
           PUNE, IN
         </span>
       </div>

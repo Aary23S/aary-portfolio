@@ -35,13 +35,13 @@ export function Hero() {
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
               to="/projects"
-              className="inline-flex items-center gap-2 rounded-sm bg-signal px-5 py-2.5 font-mono text-sm uppercase tracking-wide text-paper transition-colors hover:bg-signal-light"
+              className="inline-flex items-center gap-2 rounded-full bg-signal px-5 py-2.5 font-sans text-sm font-medium tracking-tight text-paper transition-colors hover:bg-signal-light"
             >
               View Projects
             </Link>
             <Link
               to="/contact"
-              className="inline-flex items-center gap-2 rounded-sm border border-ink/20 px-5 py-2.5 font-mono text-sm uppercase tracking-wide text-ink transition-colors hover:border-flag hover:text-flag"
+              className="inline-flex items-center gap-2 rounded-full border border-ink/20 px-5 py-2.5 font-sans text-sm font-medium tracking-tight text-ink transition-colors hover:border-flag hover:text-flag"
             >
               Contact Me
             </Link>

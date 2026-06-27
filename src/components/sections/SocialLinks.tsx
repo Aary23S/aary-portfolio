@@ -13,7 +13,7 @@ export function SocialLinks() {
           rel="noopener noreferrer"
           className="
             inline-flex items-center gap-2 rounded-full border border-brass/25
-            bg-paper/70 px-4 py-2 font-mono text-[11px] uppercase tracking-widest
+            bg-paper/70 px-4 py-2 font-sans text-[11px] font-medium tracking-[0.12em]
             text-ink/75 transition-colors hover:border-flag hover:text-flag
           "
           aria-label={`${link.label} profile`}

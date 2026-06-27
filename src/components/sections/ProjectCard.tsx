@@ -19,10 +19,10 @@ export function ProjectCard({ project }: ProjectCardProps) {
       className="group block border border-brass/30 rounded-sm p-6 hover:border-flag transition-colors"
     >
       <div className="flex items-center justify-between">
-        <span className="font-mono text-[11px] uppercase tracking-widest text-brass">
+        <span className="font-sans text-[11px] font-semibold uppercase tracking-[0.14em] text-brass">
           {STATUS_LABELS[project.status]}
         </span>
-        <span className="font-mono text-xs text-ink/40 group-hover:text-flag transition-colors">
+        <span className="font-sans text-xs text-ink/40 group-hover:text-flag transition-colors">
           →
         </span>
       </div>
@@ -40,7 +40,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           <Tag key={tech}>{tech}</Tag>
         ))}
         {project.stack.length > 4 && (
-          <span className="font-mono text-[11px] text-ink/50 self-center">
+          <span className="font-sans text-[11px] text-ink/50 self-center">
             +{project.stack.length - 4} more
           </span>
         )}

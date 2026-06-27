@@ -20,7 +20,7 @@ export function Home() {
           <SectionLabel>§03 — Selected Projects</SectionLabel>
           <Link
             to="/projects"
-            className="font-mono text-xs text-signal hover:text-flag transition-colors"
+            className="font-sans text-xs font-medium tracking-tight text-signal hover:text-flag transition-colors"
           >
             View all →
           </Link>
@@ -38,7 +38,7 @@ export function Home() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
           {skills.map((group) => (
             <div key={group.category}>
-              <h4 className="font-mono text-xs uppercase tracking-wide text-signal">
+              <h4 className="font-sans text-xs font-semibold uppercase tracking-[0.14em] text-signal">
                 {group.category}
               </h4>
               <ul className="mt-2 space-y-1">

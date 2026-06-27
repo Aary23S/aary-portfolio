@@ -16,7 +16,7 @@ export function ProjectDetail() {
 
   return (
     <div className="px-6 lg:px-16 py-16 lg:py-20 max-w-3xl">
-      <Link to="/projects" className="font-mono text-xs text-signal hover:text-flag transition-colors">
+      <Link to="/projects" className="font-sans text-xs font-medium tracking-tight text-signal hover:text-flag transition-colors">
         ← All projects
       </Link>
 

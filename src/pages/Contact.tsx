@@ -30,7 +30,7 @@ export function Contact() {
         or geopolitics. Reach out directly or use the form below.
       </p>
 
-      <div className="grid sm:grid-cols-2 gap-3 mt-8 font-mono text-sm">
+      <div className="grid sm:grid-cols-2 gap-3 mt-8 font-sans text-sm">
         <a href={`mailto:${profile.email}`} className="text-signal hover:text-flag transition-colors">
           {profile.email}
         </a>
@@ -48,14 +48,14 @@ export function Contact() {
 
       {isSuccess ? (
         <div className="mt-10 p-6 border border-signal/30 bg-signal/5 rounded-sm">
-          <p className="font-mono text-sm text-signal">
+          <p className="font-sans text-sm text-signal">
             Message sent. Thanks for reaching out — I'll reply soon.
           </p>
         </div>
       ) : (
         <form onSubmit={handleSubmit} className="mt-10 space-y-5">
           <div>
-            <label htmlFor="name" className="font-mono text-xs uppercase tracking-wide text-brass">
+            <label htmlFor="name" className="font-sans text-xs font-semibold uppercase tracking-[0.14em] text-brass">
               Name
             </label>
             <input
@@ -69,7 +69,7 @@ export function Contact() {
           </div>
 
           <div>
-            <label htmlFor="email" className="font-mono text-xs uppercase tracking-wide text-brass">
+            <label htmlFor="email" className="font-sans text-xs font-semibold uppercase tracking-[0.14em] text-brass">
               Email
             </label>
             <input
@@ -83,7 +83,7 @@ export function Contact() {
           </div>
 
           <div>
-            <label htmlFor="message" className="font-mono text-xs uppercase tracking-wide text-brass">
+            <label htmlFor="message" className="font-sans text-xs font-semibold uppercase tracking-[0.14em] text-brass">
               Message
             </label>
             <textarea
@@ -97,7 +97,7 @@ export function Contact() {
           </div>
 
           {status === "error" && errorMessage && (
-            <p className="font-mono text-xs text-flag">{errorMessage}</p>
+            <p className="font-sans text-xs text-flag">{errorMessage}</p>
           )}
 
           <Button type="submit" disabled={isSubmitting}>

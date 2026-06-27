@@ -13,7 +13,7 @@ const VARIANT_CLASSES: Record<Variant, string> = {
 };
 
 const BASE_CLASSES =
-  "inline-flex items-center gap-2 px-5 py-2.5 font-mono text-sm uppercase tracking-wide transition-colors rounded-sm";
+  "inline-flex items-center gap-2 px-5 py-2.5 font-sans text-sm font-medium tracking-tight transition-colors rounded-full";
 
 type ButtonProps = BaseProps & ButtonHTMLAttributes<HTMLButtonElement>;
 

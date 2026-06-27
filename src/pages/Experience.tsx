@@ -33,7 +33,7 @@ export function Experience() {
                 <h3 className="font-display font-semibold text-lg text-ink">
                   {entry.credential}
                 </h3>
-                <p className="font-mono text-sm text-signal mt-1">
+                <p className="font-sans text-sm text-signal mt-1">
                   {entry.institution}
                   {entry.location ? ` · ${entry.location}` : ""}
                 </p>
@@ -61,7 +61,7 @@ export function Experience() {
               </div>
               <div>
                 <h3 className="font-display font-semibold text-lg text-ink">{entry.role}</h3>
-                <p className="font-mono text-sm text-signal mt-1">{entry.organization}</p>
+                <p className="font-sans text-sm text-signal mt-1">{entry.organization}</p>
                 <ul className="mt-3 space-y-2">
                   {entry.bullets.map((bullet, idx) => (
                     <li key={idx} className="font-body text-sm text-ink/80 leading-relaxed pl-4 relative">
