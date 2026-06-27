@@ -35,6 +35,22 @@ export function ProjectCard({ project }: ProjectCardProps) {
         {project.summary}
       </p>
 
+      {project.liveUrl && (
+        <button
+          type="button"
+          onClick={(event) => {
+            event.preventDefault();
+            event.stopPropagation();
+            window.open(project.liveUrl, "_blank", "noopener,noreferrer");
+          }}
+          className="mt-4 inline-flex items-center gap-1.5 rounded-full border border-signal/25 px-3 py-1.5 font-sans text-[11px] font-medium tracking-[0.12em] text-signal transition-colors hover:border-flag hover:text-flag"
+          aria-label={`Open live site for ${project.title}`}
+        >
+          Live site
+          <span aria-hidden="true">↗</span>
+        </button>
+      )}
+
       <div className="flex flex-wrap gap-2 mt-4">
         {project.stack.slice(0, 4).map((tech) => (
           <Tag key={tech}>{tech}</Tag>

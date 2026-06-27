@@ -2,6 +2,26 @@ import type { ProjectEntry } from "../types";
 
 export const projects: ProjectEntry[] = [
   {
+    slug: "aary-portfolio",
+    title: "Aary Portfolio — Personal Portfolio Website",
+    summary:
+      "A polished, responsive portfolio website showcasing projects, experience, and live deployment links.",
+    description: [
+      "This portfolio website presents my work in a clean, responsive layout with project cards, profile details, and direct access to live deployments.",
+      "It is designed to be easy to maintain, visually calm, and production-ready for recruiters, collaborators, and public sharing.",
+    ],
+    status: "completed",
+    startDate: "2026-06",
+    endDate: "2026-06",
+    stack: ["React", "TypeScript", "Vite", "Tailwind CSS", "Vercel"],
+    liveUrl: "https://aary-portfolio.vercel.app/",
+    highlights: [
+      "Responsive portfolio grid and project detail views",
+      "Dark mode with persisted theme preference",
+      "Live project and social links surfaced in the UI",
+    ],
+  },
+  {
     slug: "vidyaq",
     title: "VidyaQ — AI-Powered UPSC Preparation Platform",
     summary:
@@ -71,6 +91,7 @@ export const projects: ProjectEntry[] = [
     startDate: "2025-05",
     endDate: "present",
     stack: ["HTML5", "CSS3", "JavaScript", "Git"],
+    liveUrl: "https://donor-lite.vercel.app/",
     highlights: [
       "WCAG-compliant accessibility from the ground up",
       "Modular CSS architecture",
@@ -90,6 +111,7 @@ export const projects: ProjectEntry[] = [
     startDate: "2025-04",
     endDate: "2025-04",
     stack: ["HTML", "CSS", "JavaScript", "Git"],
+    liveUrl: "https://hungrybearcafe.vercel.app/",
     highlights: [
       "Secured official institutional sponsorship",
       "+40% engagement increase, 100+ daily users",
