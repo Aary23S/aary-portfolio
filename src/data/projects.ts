@@ -1,0 +1,99 @@
+import type { ProjectEntry } from "../types";
+
+export const projects: ProjectEntry[] = [
+  {
+    slug: "vidyaq",
+    title: "VidyaQ — AI-Powered UPSC Preparation Platform",
+    summary:
+      "An AI-driven platform that generates new UPSC GS practice questions from previous years' papers using LLM-based synthesis.",
+    description: [
+      "VidyaQ is built from scratch as an AI-driven platform for UPSC General Studies preparation. Its core engine dynamically generates new practice questions from previous years' questions (PYQs) using LLM-based synthesis, producing contextually relevant, exam-pattern-aligned questions that reduce dependence on static material.",
+      "The architecture supports subject-wise question banks, difficulty gradation, and session-based adaptive learning flows — built to scale beyond a single static question set toward genuinely adaptive practice.",
+    ],
+    status: "in-progress",
+    startDate: "2025",
+    endDate: "present",
+    stack: ["Node.js", "LLM Integration", "MySQL", "REST APIs", "Flutter (planned)"],
+    highlights: [
+      "Subject-wise question banks with difficulty gradation",
+      "Session-based adaptive learning flow",
+      "Reduces dependence on static prep material",
+    ],
+  },
+  {
+    slug: "gymify",
+    title: "GYMify — Gym Management Mobile Application",
+    summary:
+      "A full-featured Flutter mobile app for a real gym owner, covering membership, attendance, payments, and member communication.",
+    description: [
+      "GYMify is a full-featured mobile application built for a real gym owner's actual operational needs — covering membership management, attendance tracking, payment records, and member communication workflows.",
+      "Designed around real production requirements rather than a generic template: role-based access, subscription lifecycle management, and daily operational dashboards for the gym owner.",
+    ],
+    status: "in-progress",
+    startDate: "2025",
+    endDate: "present",
+    stack: ["Flutter", "Firebase", "Dart"],
+    highlights: [
+      "Role-based access control",
+      "Subscription lifecycle management",
+      "Built for a real, operating gym business",
+    ],
+  },
+  {
+    slug: "lone-bot-ai",
+    title: "Lone Bot AI — Document Intelligence Platform",
+    summary:
+      "An AI-powered platform for multi-document upload, management, and real-time Q&A using a RAG pattern over a local LLM.",
+    description: [
+      "Lone Bot AI enables upload and management of multiple documents with real-time Q&A powered by an Ollama-hosted Mistral LLM, using similarity-based retrieval (RAG pattern) for contextually accurate answers.",
+      "The platform supports explanation, analysis, and prediction operations across both single and multiple uploaded documents, with JWT-secured access throughout.",
+    ],
+    status: "completed",
+    startDate: "2025-08",
+    endDate: "2025-08",
+    stack: ["Node.js", "Ollama-Mistral", "MySQL", "Sequelize", "Postman"],
+    highlights: [
+      "RAG pattern: similarity-based retrieval over uploaded documents",
+      "Self-hosted LLM via Ollama — no external API dependency",
+      "Explanation, analysis, and prediction modes",
+    ],
+  },
+  {
+    slug: "donor-lite",
+    title: "Donor Lite — Blood Donor Discovery Platform",
+    summary:
+      "A WCAG-compliant, responsive frontend for donor search and profiles, structured for full-stack expansion.",
+    description: [
+      "Donor Lite is a WCAG-compliant, responsive front-end for a blood donor discovery platform, built with a modular CSS architecture and full cross-device support.",
+      "The codebase is deliberately structured for full-stack expansion — authentication, a real database, and real-time search are designed in as the natural next phase rather than retrofitted later.",
+    ],
+    status: "in-progress",
+    startDate: "2025-05",
+    endDate: "present",
+    stack: ["HTML5", "CSS3", "JavaScript", "Git"],
+    highlights: [
+      "WCAG-compliant accessibility from the ground up",
+      "Modular CSS architecture",
+      "Structured for auth + database + real-time search expansion",
+    ],
+  },
+  {
+    slug: "hungry-bear-cafeteria",
+    title: "Hungry Bear Cafeteria Website",
+    summary:
+      "A sponsored, production-grade mobile-first café site that boosted user engagement by 40% for 100+ daily users.",
+    description: [
+      "Built under official institutional sponsorship, this is a production-grade, mobile-first website for a real café — not a class exercise. It shipped with a gallery, menu filtering, and smooth navigation on top of a clean, responsive UX.",
+      "The site measurably boosted user engagement by 40% across more than 100 daily users after launch.",
+    ],
+    status: "completed",
+    startDate: "2025-04",
+    endDate: "2025-04",
+    stack: ["HTML", "CSS", "JavaScript", "Git"],
+    highlights: [
+      "Secured official institutional sponsorship",
+      "+40% engagement increase, 100+ daily users",
+      "Menu filtering and gallery built from scratch",
+    ],
+  },
+];
