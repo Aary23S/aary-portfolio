@@ -1,4 +1,6 @@
 export type ProjectStatus = "in-progress" | "completed" | "planned";
+export type ProjectPlatform = "web" | "app";
+export type ProjectScope = "frontend" | "backend" | "full-stack";
 
 export interface ProjectEntry {
   /** URL-safe slug, used as the route param for the detail page: /projects/:slug */
@@ -9,6 +11,8 @@ export interface ProjectEntry {
   /** Full description shown on the project detail page. Supports multiple paragraphs. */
   description: string[];
   status: ProjectStatus;
+  platform: ProjectPlatform;
+  scope: ProjectScope;
   /** ISO "YYYY-MM" for sorting; display formatting handled in utils/formatDate */
   startDate: string;
   endDate?: string | "present";

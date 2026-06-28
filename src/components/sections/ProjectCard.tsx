@@ -12,28 +12,46 @@ const STATUS_LABELS: Record<ProjectEntry["status"], string> = {
   planned: "Planned",
 };
 
+const PLATFORM_LABELS: Record<ProjectEntry["platform"], string> = {
+  web: "Web",
+  app: "App",
+};
+
+const SCOPE_LABELS: Record<ProjectEntry["scope"], string> = {
+  frontend: "Frontend Only",
+  backend: "Backend Only",
+  "full-stack": "Full Stack",
+};
+
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <Link
-      to={`/projects/${project.slug}`}
-      className="group block border border-brass/30 rounded-sm p-6 hover:border-flag transition-colors"
-    >
-      <div className="flex items-center justify-between">
-        <span className="font-sans text-[11px] font-semibold uppercase tracking-[0.14em] text-brass">
-          {STATUS_LABELS[project.status]}
-        </span>
+    <article className="group border border-brass/30 rounded-sm p-6 hover:border-flag transition-colors">
+      <div className="flex items-start justify-between gap-3">
+        <div className="flex flex-wrap gap-2">
+          <span className="rounded-full border border-signal/20 bg-signal/5 px-2.5 py-1 font-sans text-[10px] font-semibold uppercase tracking-[0.14em] text-signal">
+            {PLATFORM_LABELS[project.platform]}
+          </span>
+          <span className="rounded-full border border-brass/25 bg-paper px-2.5 py-1 font-sans text-[10px] font-semibold uppercase tracking-[0.14em] text-brass">
+            {SCOPE_LABELS[project.scope]}
+          </span>
+          <span className="rounded-full border border-flag/20 bg-flag/5 px-2.5 py-1 font-sans text-[10px] font-semibold uppercase tracking-[0.14em] text-flag">
+            {STATUS_LABELS[project.status]}
+          </span>
+        </div>
         <span className="font-sans text-xs text-ink/40 group-hover:text-flag transition-colors">
           →
         </span>
       </div>
 
-      <h3 className="font-display font-semibold text-xl text-ink mt-3 group-hover:text-signal transition-colors">
-        {project.title}
-      </h3>
+      <Link to={`/projects/${project.slug}`} className="block">
+        <h3 className="font-display font-semibold text-xl text-ink mt-3 group-hover:text-signal transition-colors">
+          {project.title}
+        </h3>
 
-      <p className="font-body text-sm text-ink/70 mt-2 leading-relaxed">
-        {project.summary}
-      </p>
+        <p className="font-body text-sm text-ink/70 mt-2 leading-relaxed">
+          {project.summary}
+        </p>
+      </Link>
 
       {project.liveUrl && (
         <button
@@ -52,15 +70,10 @@ export function ProjectCard({ project }: ProjectCardProps) {
       )}
 
       <div className="flex flex-wrap gap-2 mt-4">
-        {project.stack.slice(0, 4).map((tech) => (
+        {project.stack.map((tech) => (
           <Tag key={tech}>{tech}</Tag>
         ))}
-        {project.stack.length > 4 && (
-          <span className="font-sans text-[11px] text-ink/50 self-center">
-            +{project.stack.length - 4} more
-          </span>
-        )}
       </div>
-    </Link>
+    </article>
   );
 }
