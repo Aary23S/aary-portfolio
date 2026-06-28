@@ -4,7 +4,7 @@ import { SectionLabel } from "../components/ui/SectionLabel";
 
 export function Projects() {
   return (
-    <div className="px-6 lg:px-16 py-16 lg:py-20">
+    <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-16 py-16 lg:py-20">
       <section id="projects" className="scroll-mt-8">
         <SectionLabel>§03 — Projects</SectionLabel>
         <h1 className="font-display font-black text-3xl lg:text-4xl mt-3 text-ink">
@@ -15,7 +15,7 @@ export function Projects() {
           and ongoing personal projects.
         </p>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
+        <div className="grid gap-5 mt-10 md:grid-cols-2 xl:grid-cols-3">
           {projects.map((project) => (
             <ProjectCard key={project.slug} project={project} />
           ))}

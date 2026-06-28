@@ -18,7 +18,7 @@ const CATEGORY_ORDER: AchievementCategory[] = [
 
 export function Achievements() {
   return (
-    <div className="px-6 lg:px-16 py-16 lg:py-20 max-w-4xl">
+    <div className="mx-auto w-full max-w-4xl px-4 sm:px-6 lg:px-16 py-16 lg:py-20">
       <section id="achievements" className="scroll-mt-8">
         <SectionLabel>§04 — Achievements</SectionLabel>
         <h1 className="font-display font-black text-3xl lg:text-4xl mt-3 text-ink">
@@ -37,7 +37,7 @@ export function Achievements() {
                 </h2>
                 <div className="mt-4 space-y-5">
                   {items.map((item) => (
-                    <div key={item.id} className="grid sm:grid-cols-[100px_1fr] gap-3 sm:gap-6">
+                    <div key={item.id} className="grid gap-3 md:grid-cols-[100px_1fr] md:gap-6">
                       <div className="font-mono text-xs text-brass uppercase tracking-wide">
                         {item.dateLabel}
                       </div>

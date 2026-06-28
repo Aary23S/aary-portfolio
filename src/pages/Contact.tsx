@@ -20,7 +20,7 @@ export function Contact() {
   const isSuccess = status === "success";
 
   return (
-    <div id="contact" className="px-6 lg:px-16 py-16 lg:py-20 max-w-3xl scroll-mt-8">
+    <div id="contact" className="mx-auto w-full max-w-3xl px-4 sm:px-6 lg:px-16 py-16 lg:py-20 scroll-mt-8">
       <SectionLabel>§05 — Contact</SectionLabel>
       <h1 className="font-display font-black text-3xl lg:text-4xl mt-3 text-ink">
         Get in touch
@@ -30,7 +30,7 @@ export function Contact() {
         or geopolitics. Reach out directly or use the form below.
       </p>
 
-      <div className="grid sm:grid-cols-2 gap-3 mt-8 font-sans text-sm">
+      <div className="grid gap-3 mt-8 font-sans text-sm sm:grid-cols-2">
         <a href={`mailto:${profile.email}`} className="text-signal hover:text-flag transition-colors">
           {profile.email}
         </a>

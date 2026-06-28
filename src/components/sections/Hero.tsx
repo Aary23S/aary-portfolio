@@ -8,7 +8,7 @@ export function Hero() {
   return (
     <section
       id="overview"
-      className="px-6 lg:px-16 pt-16 lg:pt-24 pb-12 scroll-mt-8"
+      className="px-4 sm:px-6 lg:px-16 pt-16 lg:pt-24 pb-12 scroll-mt-8"
     >
       <div className="grid gap-10 lg:grid-cols-[1.3fr_0.85fr] lg:items-center">
         <div>

@@ -9,7 +9,7 @@ export function Footer() {
         <span>
           © {year} {profile.name}
         </span>
-        <span>Built with React, Tailwind, and a class-based dark mode</span>
+        <span className="hidden sm:inline">Built by {profile.name}.</span>
       </div>
     </footer>
   );

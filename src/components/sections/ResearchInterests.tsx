@@ -3,10 +3,10 @@ import { SectionLabel } from "../ui/SectionLabel";
 
 export function ResearchInterests() {
   return (
-    <section className="px-6 lg:px-16 py-12 border-t border-brass/20">
+    <section className="px-4 sm:px-6 lg:px-16 py-12 border-t border-brass/20">
       <SectionLabel>Research Interests</SectionLabel>
 
-      <div className="grid sm:grid-cols-2 gap-8 mt-6">
+      <div className="grid gap-6 md:grid-cols-2 mt-6">
         {profile.researchInterests.map((interest) => (
           <div key={interest.title}>
             <h3 className="font-display font-semibold text-lg text-ink">

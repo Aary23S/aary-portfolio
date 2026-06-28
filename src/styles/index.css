@@ -70,6 +70,7 @@ html {
 
 body {
   min-height: 100vh;
+  overflow-x: hidden;
   background-color: var(--paper);
   background-image:
     radial-gradient(circle at top, color-mix(in srgb, var(--signal) 10%, transparent), transparent 42%),

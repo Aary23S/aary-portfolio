@@ -7,7 +7,7 @@ import { formatDateRange } from "../utils/formatDate";
 
 export function Experience() {
   return (
-    <div className="px-6 lg:px-16 py-16 lg:py-20 max-w-4xl">
+    <div className="mx-auto w-full max-w-4xl px-4 sm:px-6 lg:px-16 py-16 lg:py-20">
       <section id="experience" className="scroll-mt-8">
         <SectionLabel>§02 — Experience</SectionLabel>
         <h1 className="font-display font-black text-3xl lg:text-4xl mt-3 text-ink">
@@ -25,7 +25,7 @@ export function Experience() {
         <SectionLabel>Education</SectionLabel>
         <div className="mt-6 space-y-6">
           {education.map((entry) => (
-            <div key={entry.id} className="grid sm:grid-cols-[140px_1fr] gap-4 sm:gap-8">
+            <div key={entry.id} className="grid gap-4 md:grid-cols-[140px_1fr] md:gap-8">
               <div className="font-mono text-xs text-brass uppercase tracking-wide">
                 {formatDateRange(entry.startDate, entry.endDate)}
               </div>
@@ -55,7 +55,7 @@ export function Experience() {
         <SectionLabel>Leadership &amp; Community</SectionLabel>
         <div className="mt-6 space-y-8">
           {leadership.map((entry) => (
-            <div key={entry.id} className="grid sm:grid-cols-[140px_1fr] gap-4 sm:gap-8">
+            <div key={entry.id} className="grid gap-4 md:grid-cols-[140px_1fr] md:gap-8">
               <div className="font-mono text-xs text-brass uppercase tracking-wide">
                 {formatDateRange(entry.startDate, entry.endDate)}
               </div>
