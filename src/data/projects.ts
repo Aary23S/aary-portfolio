@@ -22,6 +22,26 @@ export const projects: ProjectEntry[] = [
     ],
   },
   {
+    slug: "code-wizards",
+    title: "Code Wizards — University Coding Club Website",
+    summary:
+      "A public website for my university's coding club, built to present the community, updates, and club identity cleanly.",
+    description: [
+      "Code Wizards is the official website for my university's coding club, which I co-founded. It presents the club's presence online in a structured, easy-to-navigate format.",
+      "The project focuses on clear communication, public visibility, and a polished experience for students who want to understand the club, explore updates, and engage with the community.",
+    ],
+    status: "completed",
+    startDate: "2026-06",
+    endDate: "2026-06",
+    stack: ["Website", "Community", "Responsive UI", "Vercel"],
+    liveUrl: "https://codewizards-eosin.vercel.app/",
+    highlights: [
+      "Official website for the university coding club",
+      "Built to support club identity and public visibility",
+      "Co-founded initiative",
+    ],
+  },
+  {
     slug: "vidyaq",
     title: "VidyaQ — AI-Powered UPSC Preparation Platform",
     summary:
