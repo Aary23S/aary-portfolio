@@ -19,7 +19,7 @@ export function DossierRail() {
         lg:left-0 lg:top-0 lg:h-full lg:w-56 lg:border-r lg:border-brass/30
         lg:flex lg:flex-col lg:justify-between lg:py-10 lg:px-6
         bottom-0 left-0 right-0 w-full border-t border-brass/30
-        flex flex-row justify-around px-2 py-3
+        grid grid-cols-5 gap-1 px-1.5 py-2
       "
     >
       <div className="hidden lg:block">
@@ -28,21 +28,21 @@ export function DossierRail() {
         </span>
       </div>
 
-      <ul className="flex lg:flex-col flex-row gap-1 lg:gap-1 w-full lg:w-auto justify-between lg:justify-start">
+      <ul className="col-span-5 flex w-full items-stretch justify-between gap-1 lg:col-span-1 lg:flex-col lg:w-auto lg:justify-start">
         {navEntries.map((entry) => (
           <li key={entry.path} className="flex-1 lg:flex-none">
             <NavLink
               to={entry.path}
               className={({ isActive }) =>
                 `group flex flex-col lg:flex-row items-center lg:items-baseline gap-0.5 lg:gap-2
-                 px-2 lg:px-3 py-2 lg:py-1.5 rounded-sm transition-colors
+                 px-1.5 sm:px-2 lg:px-3 py-2 lg:py-1.5 rounded-sm transition-colors min-w-0
                  ${isActive ? "text-flag" : "text-ink/70 hover:text-signal"}`
               }
             >
-              <span className="font-sans text-[10px] lg:text-xs font-semibold tracking-[0.16em] opacity-70">
+              <span className="font-sans text-[9px] sm:text-[10px] lg:text-xs font-semibold tracking-[0.16em] opacity-70">
                 §{entry.index}
               </span>
-              <span className="font-sans text-[10px] lg:text-sm font-medium uppercase tracking-[0.12em]">
+              <span className="font-sans text-[9px] sm:text-[10px] lg:text-sm font-medium uppercase tracking-[0.1em] text-center leading-tight">
                 {entry.label}
               </span>
             </NavLink>
