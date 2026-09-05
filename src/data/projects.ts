@@ -5,22 +5,24 @@ export const projects: ProjectEntry[] = [
     slug: "careergraph-ai",
     title: "CareerGraph AI",
     summary:
-      "A progressive career intelligence platform scaling from a full-stack MVP to full AI/ML capabilities.",
+      "An AI-powered career intelligence MVP featuring automated job syncing, local LLMs, and Redis-backed task queues.",
     description: [
-      "CareerGraph AI is a career intelligence platform designed to be built progressively.",
-      "It started with a reliable full-stack MVP and is scaling toward AI, ML, MLOps, cloud, observability, and production-scale capabilities."
+      "CareerGraph AI is a robust career intelligence platform built to aggregate and analyze job opportunities.",
+      "The MVP includes background synchronization for Adzuna and Gmail LinkedIn alerts, distributed task processing with BullMQ and Redis, and AI evaluation powered by local LLMs (Ollama) and embedding models.",
+      "It also features a Telegram bot integration for real-time alerts and user interaction."
     ],
     status: "in-progress",
     platform: "web",
     scope: "full-stack",
     startDate: "2026-08",
     endDate: "present",
-    stack: ["React", "Node.js", "Express", "PostgreSQL", "Sequelize", "Docker"],
+    stack: ["React", "Node.js", "Express", "PostgreSQL", "Redis", "BullMQ", "Ollama"],
     liveUrl: "https://careergraph-ai-fawn.vercel.app/",
     highlights: [
-      "Progressive architecture scaling to AI/ML and MLOps",
-      "Full-stack MVP with Node.js, Express, and PostgreSQL",
-      "Dockerized development and deployment workflows",
+      "Job aggregation via Adzuna API and Gmail/LinkedIn alerts",
+      "Scalable background worker architecture using Redis and BullMQ",
+      "AI evaluation and embeddings via Ollama and Groq",
+      "Real-time notifications via integrated Telegram Bot",
     ],
   },
   {
