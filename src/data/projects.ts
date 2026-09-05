@@ -5,24 +5,29 @@ export const projects: ProjectEntry[] = [
     slug: "careergraph-ai",
     title: "CareerGraph AI",
     summary:
-      "An AI-powered career intelligence MVP featuring automated job syncing, local LLMs, and Redis-backed task queues.",
+      "A full-stack career-intelligence platform unifying a job tracker, CRM, and referral-outreach engine.",
     description: [
-      "CareerGraph AI is a robust career intelligence platform built to aggregate and analyze job opportunities.",
-      "The MVP includes background synchronization for Adzuna and Gmail LinkedIn alerts, distributed task processing with BullMQ and Redis, and AI evaluation powered by local LLMs (Ollama) and embedding models.",
-      "It also features a Telegram bot integration for real-time alerts and user interaction."
+      "Architected a full-stack career-intelligence platform unifying a job tracker, a professional CRM with ~9,000 imported LinkedIn connections, and a referral-outreach engine on a single 27-table PostgreSQL schema — built deterministic-first and hardened with 84/84 tests before any AI integration.",
+      "Designed a fault-tolerant AI subsystem: a Redis-backed BullMQ job queue with automatic in-memory fallback, a dedicated worker process with graceful shutdown, and a swappable LLM provider layer (Ollama/Groq/mock) behind one interface.",
+      "Built AI-driven job/resume/connection enrichment, blended deterministic+AI match scoring, and guardrail-checked outreach drafting, plus a semantic search layer using sentence-transformer embeddings served via a Python FastAPI microservice with full Node-side fallback.",
+      "Engineered a reproducible, leakage-checked ML data pipeline (extract → validate → feature-engineer → split → version → publish) with MLflow experiment tracking isolated from the inference hot path."
     ],
     status: "in-progress",
     platform: "web",
     scope: "full-stack",
     startDate: "2026-08",
     endDate: "present",
-    stack: ["React", "Node.js", "Express", "PostgreSQL", "Redis", "BullMQ", "Ollama"],
+    stack: [
+      "React", "Vite", "Node.js", "Express.js", "PostgreSQL", "Sequelize",
+      "BullMQ", "Redis", "Python", "FastAPI", "sentence-transformers",
+      "MLflow", "Ollama", "Groq", "Docker", "JWT"
+    ],
     liveUrl: "https://careergraph-ai-fawn.vercel.app/",
     highlights: [
-      "Job aggregation via Adzuna API and Gmail/LinkedIn alerts",
-      "Scalable background worker architecture using Redis and BullMQ",
-      "AI evaluation and embeddings via Ollama and Groq",
-      "Real-time notifications via integrated Telegram Bot",
+      "Unified job tracker, CRM with ~9k connections, and outreach engine",
+      "Fault-tolerant AI subsystem with Redis/BullMQ and swappable LLMs",
+      "AI enrichment, match scoring, and sentence-transformer semantic search",
+      "Leakage-checked ML data pipeline with MLflow tracking",
     ],
   },
   {
