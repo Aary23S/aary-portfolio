@@ -2,6 +2,28 @@ import type { ProjectEntry } from "../types";
 
 export const projects: ProjectEntry[] = [
   {
+    slug: "careergraph-ai",
+    title: "CareerGraph AI",
+    summary:
+      "A progressive career intelligence platform scaling from a full-stack MVP to full AI/ML capabilities.",
+    description: [
+      "CareerGraph AI is a career intelligence platform designed to be built progressively.",
+      "It started with a reliable full-stack MVP and is scaling toward AI, ML, MLOps, cloud, observability, and production-scale capabilities."
+    ],
+    status: "in-progress",
+    platform: "web",
+    scope: "full-stack",
+    startDate: "2026-08",
+    endDate: "present",
+    stack: ["React", "Node.js", "Express", "PostgreSQL", "Sequelize", "Docker"],
+    liveUrl: "https://careergraph-ai-fawn.vercel.app/",
+    highlights: [
+      "Progressive architecture scaling to AI/ML and MLOps",
+      "Full-stack MVP with Node.js, Express, and PostgreSQL",
+      "Dockerized development and deployment workflows",
+    ],
+  },
+  {
     slug: "aary-portfolio",
     title: "Aary Portfolio — Personal Portfolio Website",
     summary:
